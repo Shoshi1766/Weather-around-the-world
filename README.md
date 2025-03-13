@@ -14,7 +14,4 @@ The app fetches weather data from [WeatherAPI.com](https://www.weatherapi.com/) 
 - **Backend:** Node.js, Express, Axios, Dotenv, Cors, Https
 - **API:** WeatherAPI.com
 
-## Setup Instructions
- cd Backend
- npm i
  
