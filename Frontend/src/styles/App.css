@@ -1,0 +1,72 @@
+
+body {
+    background-color: #F1F1F1;
+    font-family: "Heebo";
+    display: block;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-height: 90vh;
+    margin: auto;
+    width: 90%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    display: grid;
+    grid-template-areas:
+        'input_slide weather_slide'
+        'footer weather_slide ';
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.logo {
+    position: absolute;
+    left: 4%;
+    top: 8%;
+}
+
+.input_side {
+    grid-area: input_slide;
+    margin-left: 10%;
+    padding-right: 2%;
+    width: 80%;
+}
+
+.weather_side {
+    grid-area: weather_slide;
+    justify-content: center;
+
+
+}
+
+@media(max-width: 600px) {
+    .container {
+        grid-template-areas:
+            'input_slide'
+            'weather_slide'
+            'footer';
+        gap: 50px;
+        grid-template-columns: none;
+        font-size: 1.5rem;
+
+    }
+
+}
+
+@media (min-width: 1701px) {
+    .logo {
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 2000px) {
+    .logo {
+        width: 180px;
+    }
+}

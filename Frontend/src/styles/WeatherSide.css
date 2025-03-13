@@ -1,0 +1,147 @@
+.weather_side {
+    max-width: 90%;
+    padding: 7% 9%;
+    margin-right: 3%;
+    margin-left: 3%;
+    background-color: #DDE4E6;
+    flex: 1;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #e8f1f2e6;
+    border-radius: 1%;
+    margin: 1%;
+
+}
+
+
+.inner_weather_side {
+    background-color: #27737D;
+    border-radius: 4%;
+    max-width: 100%;
+    margin: auto;
+    padding: 10% 1%;
+
+}
+
+.city {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.country {
+    margin: 0px;
+    position: relative;
+    bottom: 6px;
+}
+
+.white_grey {
+    color: #A8C6CB
+}
+
+.date {
+    margin: 0px;
+}
+
+.temp_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.temperature {
+    font-size: 5.2rem;
+    color: #ffff;
+    font-weight: 650;
+    margin: 0px;
+    flex: 1;
+
+}
+
+.condition {
+    margin: 0px;
+    flex: 1;
+    font-weight: 200;
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 36px;
+    right: 15px;
+    text-transform: lowercase;
+}
+
+.weather_details {
+    display: flex;
+}
+
+.weather_time {
+    display: flex;
+    margin-top: 6%;
+}
+
+.det {
+    flex: 1;
+    margin: 0px;
+}
+
+
+.p_no_weather {
+    color: #707070;
+    min-height: 250px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .weather_details .weather_time{
+        font-size: 0.8rem;
+    }
+    .weather_side{
+        max-width: 100%;
+        padding: 4% 6%;
+    }
+ 
+
+}
+@media (min-width: 600px) {
+    .p_no_weather {
+        font-size: 1.2rem;
+     }
+}
+@media (max-width: 400px) {
+    .weather_details .weather_time{
+        font-size: 0.8rem;
+    }
+
+}
+@media (min-width: 1701px) {
+    .city{
+        font-size: 2rem;
+    }
+    .country{
+        font-size: 1.5rem;
+    }
+    .date{
+        font-size: 1.5rem;
+    }
+    .temperature{
+        font-size: 7rem;
+    }
+    .condition{
+        font-size: 2rem;
+
+    }
+    .weather_details{
+        font-size: 2rem;
+    }
+    
+.p_no_weather {
+   font-size: 1.5rem;
+}
+}

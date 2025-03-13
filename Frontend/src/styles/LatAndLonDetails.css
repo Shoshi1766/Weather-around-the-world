@@ -1,0 +1,47 @@
+.small_details {
+    grid-area: footer;
+    margin-left: 10%;
+    color: #707070;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-bottom: 0%;
+    display: grid;
+    grid-template-areas:
+        'lat lon'
+        'time time';
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 30px;  
+
+
+}
+
+.lat_lon {
+    display: flex;
+    flex: 1;
+}
+
+.lat {
+    grid-area: lat;
+    margin-right: 10px; 
+
+}
+
+.lon {
+    grid-area: lon;
+}
+
+.time {
+    grid-area: time;
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+}
+
+@media (min-width: 1701px) {
+    .small_details {
+        font-size: 1.3rem;
+    }
+
+   
+}
