@@ -11,7 +11,7 @@ const WeatherSide = () => {
     const { city } = useCity();
     const { updateLatAndLon } = uselatAndLonDetails();
 
-    const bringFromServer = async () => {
+    const getWeatherData = async () => {
 
         try {
             const res = await weatherFromApi(city);
@@ -34,7 +34,7 @@ const WeatherSide = () => {
 
     useEffect(() => {
         if (city)
-            bringFromServer();
+            getWeatherData();
     }, [city]);
 
     return (
@@ -60,7 +60,7 @@ const WeatherSide = () => {
 
                 <div className="weather_details weather_time weather_time_title white_grey">
                     {weatherDetails.temp_per_hours.map((hourData) => (
-                        <p key={hourData.time} className="det">{hourData.time}:</p>
+                        <p key={hourData.time} className="det">{hourData.time}</p>
                     ))}
                 </div>
                 <div className="weather_details weather_details_data">
